@@ -1,0 +1,89 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CizgiWebServer
+build_property.RootNamespace = CizgiWebServer
+build_property.ProjectDir = /Users/emircolakbuyuk/RiderProjects/CizgiWebServer/CizgiWebServer/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/emircolakbuyuk/RiderProjects/CizgiWebServer/CizgiWebServer
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/emircolakbuyuk/RiderProjects/CizgiWebServer/CizgiWebServer/Pages/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWJvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emircolakbuyuk/RiderProjects/CizgiWebServer/CizgiWebServer/Pages/AdminPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRtaW5QYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emircolakbuyuk/RiderProjects/CizgiWebServer/CizgiWebServer/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emircolakbuyuk/RiderProjects/CizgiWebServer/CizgiWebServer/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emircolakbuyuk/RiderProjects/CizgiWebServer/CizgiWebServer/Pages/loginx.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvbG9naW54LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emircolakbuyuk/RiderProjects/CizgiWebServer/CizgiWebServer/Pages/Post.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUG9zdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emircolakbuyuk/RiderProjects/CizgiWebServer/CizgiWebServer/Pages/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emircolakbuyuk/RiderProjects/CizgiWebServer/CizgiWebServer/Pages/Shared/_HomeLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19Ib21lTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emircolakbuyuk/RiderProjects/CizgiWebServer/CizgiWebServer/Pages/Shared/_LayoutWithoutCarousel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXRXaXRob3V0Q2Fyb3VzZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emircolakbuyuk/RiderProjects/CizgiWebServer/CizgiWebServer/Pages/Shared/_LoggedIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19Mb2dnZWRJbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emircolakbuyuk/RiderProjects/CizgiWebServer/CizgiWebServer/Pages/Shared/_LogInLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19Mb2dJbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emircolakbuyuk/RiderProjects/CizgiWebServer/CizgiWebServer/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emircolakbuyuk/RiderProjects/CizgiWebServer/CizgiWebServer/Pages/SignIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2lnbkluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emircolakbuyuk/RiderProjects/CizgiWebServer/CizgiWebServer/Pages/UserPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlclBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emircolakbuyuk/RiderProjects/CizgiWebServer/CizgiWebServer/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emircolakbuyuk/RiderProjects/CizgiWebServer/CizgiWebServer/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emircolakbuyuk/RiderProjects/CizgiWebServer/CizgiWebServer/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-bee9ea4644
+
+[/Users/emircolakbuyuk/RiderProjects/CizgiWebServer/CizgiWebServer/Pages/Shared/_LayoutUserPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXRVc2VyUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-lu0l5ggu58

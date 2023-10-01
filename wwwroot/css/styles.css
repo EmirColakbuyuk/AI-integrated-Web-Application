@@ -1,0 +1,51 @@
+/* styles.css */
+body {
+    background-color: antiquewhite;
+}
+
+.header {
+    text-align: center;
+    margin-top: 50px;
+    color: darkslategray; /* Set the color of the header text to white */
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: darkslategray;
+}
+
+.content {
+    font-size: 1.2rem;
+    color: black;
+    text-align: center;
+}
+
+
+.bg-orange {
+    background-color: orangered; 
+}
+
+.footer-text-white {
+    color: white;
+}
+
+.bg-grey {
+    background-color: dimgray;
+}
+
+.bg-antique
+{
+    background-color: antiquewhite;
+}
+
+.custom-carousel {
+   
+    height: 800px; 
+}
+
+
+
+
+
+

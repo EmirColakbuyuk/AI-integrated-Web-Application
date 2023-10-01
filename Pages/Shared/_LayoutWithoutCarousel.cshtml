@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - CizgiWebServer</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css"/>
+    <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true"/>
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="~/ÇİZGİİİİ.png" alt="Logo" width="150" height="60" />
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="~/Index">Home </a>
+                <a class="nav-item nav-link" href="~/About">About</a>
+                <a class="nav-item nav-link" href="~/loginx">Login</a>
+                <a class="nav-item nav-link" href="~/AdminPage">Admin</a> 
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container flex-grow-1">
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+</div>
+<footer class="border-top footer footer-text-white bg-grey">
+    <div class="container text-center">
+        &copy; 2023 - CizgiWebServer - <a href="tel:05331331904">Contact: 0533 133 1904</a>
+    </div>
+</footer>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+<script src="~/js/login.js" asp-append-version="true"></script>
+
+@RenderSection("Scripts", required: false)
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+    <meta name="viewport" content="width = device-width, initial-scale=1.0"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/styles2.css"/>
+    <link rel="stylesheet" href="css/styles3.css"/>
+</head>
+
+<body>
+<div class="navbar" style="position: absolute; top: 0;">
+    <img src="" class="logo"/>
+    <ul>
+        <li>
+            <a href="~/Index">Home</a>
+        </li>
+        <li>
+            <a href="~/About">About</a>
+        </li>
+        <li>
+            <a href="~/Loginx">Login</a>
+        </li>
+    </ul>
+</div>
+
+<div class="log-card">
+    <form action="Login">
+        <h1>Login</h1>
+        <div class="input-box">
+            <input type="text" placeholder="Username" id="username">
+            <i class='bx bx-user'></i>
+        </div>
+        <div class="input-box">
+            <input type="password" placeholder="Password" id="password">
+            <i class='bx bxs-lock'></i>
+        </div>
+        <div id="message" style="color: red;"></div>
+
+        <button type="button" class="button" id="buttonLogin">Login</button>
+
+        <div class="already-have">
+            <a href="~/SignIn">Haven't registered yet?</a>
+        </div>
+      
+    </form>
+    @RenderBody()
+</div>
+
+
+</body>
+
+<script src="~/js/login.js"></script>
+
+
+</html>

@@ -1,0 +1,105 @@
+@page
+@model CizgiWebServer.Pages.About
+
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us</title>
+    <style>
+        html, body {
+            height: 100%;
+            font-family: 'Poppins', sans-serif;
+            background:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url("https://images.unsplash.com/photo-1465065857165-8630cbecd420?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1752&q=80");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about-content {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .content-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .center-text {
+            text-align: center;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="about-content">
+        <h1 class="center-text">About Us</h1>
+        <p>İki üniversite arkadaşının 1994 yılında bir hayalle başlamış oldukları yolculukta, bugün çeyrek asırlık tecrübe ile Türkiye'nin lider Endüstriyel Bilgisayar, Medikal Bilgisayar ve Digital Signage & Kiosk üreticisiyiz.</p>
+    </div>  
+    <div class="about-content">
+        <h1 class="center-text">Mission</h1>
+        <p>Medikal, askeri, sanayi ve hizmet sektörleri için profesyonel bilgi işlem ve iletişim sistemlerine yönelik özgün, yenilikçi donanımlar tasarlamak, üretmek ve bu donanımlar üzerinde etkin yazılımlar geliştirerek paydaşlarımıza optimum çözümler sunmaktır.</p>
+    </div>
+    <div class="about-content">
+        <h1 class="center-text">Vision</h1>
+        <p>Katma değeri yüksek, yenilikçi teknoloji ürünlerini dünyaya sunan prestijli bir marka olmaktır.</p>
+    </div>
+</div>
+
+
+<div class="wrapper">
+    <div class="button">
+        <a href="https://www.facebook.com/cizgiteknolojias/" target="_blank">
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+            </div>
+            <span>Facebook</span>
+        </a>
+    </div>
+     
+    <div class="button">
+        <a href="https://www.instagram.com/cizgi_teknoloji/" target="_blank">
+            <div class="icon">
+                <i class="fab fa-instagram"></i>
+            </div>
+            <span>Instagram</span>
+        </a>
+    </div>
+    <div class="button">
+        <a href="#" target="_blank">
+            <div class="icon">
+                <i class="fab fa-github"></i>
+            </div>
+            <span>Github</span>
+        </a>
+    </div>
+    <div class="button">
+        <a href="https://www.youtube.com/CizgiTechnology" target="_blank">
+            <div class="icon">
+                <i class="fab fa-youtube"></i>
+            </div>
+            <span>YouTube</span>
+        </a>
+    </div>
+</div>
+
+
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        setTimeout(() => {
+            document.querySelectorAll(".about-content").forEach(element => {
+                element.classList.add("content-visible");
+            });
+        }, 1000);
+    });
+</script>
+</html>

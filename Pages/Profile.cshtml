@@ -1,0 +1,124 @@
+@page
+@model CizgiWebServer.Pages.ProfileModel
+@{
+    Layout = "_LayoutUserPage";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("https://images.unsplash.com/photo-1511466157866-519498d46d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80");
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        p {
+            color: white;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        
+        #changePasswordForm {
+            color: white;
+            margin-top: 20px;
+            width: 300px; 
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid white;
+            border-radius: 5px;
+            background-color: transparent;
+            color: white;
+        }
+
+        #passwordMatchMessage {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+
+        #confirmChangePasswordButton {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 30px; 
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #confirmChangePasswordButton:hover {
+            background-color: #2980b9;
+        }
+
+        #changePasswordMessage {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        
+        #passwordMatchIcon {
+            display: none; 
+            margin-left: 5px;
+            color: green; 
+            font-size: 35px;
+        }
+        
+    </style>
+</head>
+<body>
+<div>
+    <h1>User Profile</h1>
+    @if (ViewData["UserProfile"] is CizgiWebServer.Models.UserProfileModel userProfile)
+    {
+        <p>Name: @userProfile.Name</p>
+        <p>Surname: @userProfile.Surname</p>
+        <p>Username: @userProfile.UserName</p>
+        <p>Email: @userProfile.UserMail</p>
+    }
+
+    <button type="button" id="changePasswordButton">Change Password</button>
+    <div id="changePasswordForm" style="display: none;">
+        <div>
+            <label for="oldPassword">Old Password:</label>
+            <input type="password" id="oldPassword" name="OldPassword" />
+        </div>
+        <div>
+            <label for="newPassword">New Password:</label>
+            <input type="password" id="newPassword" name="NewPassword"  />
+         
+        </div>
+        <div>
+            <label for="confirmNewPassword">Confirm New Password:</label>
+            <input type="password" id="confirmNewPassword" name="ConfirmNewPassword"  />
+           
+        </div>
+        <div id="passwordMatchMessage" style="color: red;"></div>
+        <div>
+            <button type="button" id="confirmChangePasswordButton">Confirm Change Password</button>
+        </div>
+        <div id="changePasswordMessage" style="color: red;"></div>
+    </div>
+</div>
+
+<script src="~/js/profile.js"></script>
+</body>
+</html>

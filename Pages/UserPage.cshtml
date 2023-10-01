@@ -1,0 +1,46 @@
+@page
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model CizgiWebServer.Pages.UserPage
+
+@{
+    Layout = "_LayoutUserPage";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UserPage</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.css" />
+    
+</head>
+<body>
+<div>
+    <h1 style="color: white;">Welcome @ViewBag.Username</h1>
+    <table id="tweetTable" class="display">
+        <thead>
+        <tr>
+            <th>Tweet</th>
+            <th>Content Output</th>
+            <th>Date</th>
+            <th>Url</th>
+        </tr>
+        </thead>
+        <tbody id="tweetList"></tbody>
+    </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.js"></script>
+<script src="~/js/usertweets.js"></script>
+
+
+
+<script>
+    const userId = @ViewBag.UserId; 
+    getTweetsByUserId(userId)
+        .then((tweets) => displayTweets(tweets))
+        .catch((error) => console.error("Error:", error));
+
+</script>
+</body>
+</html>

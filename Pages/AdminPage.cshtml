@@ -1,0 +1,74 @@
+@page
+@model CizgiWebServer.Pages.AdminPageModel
+
+@{
+    Layout = "_LoggedIn";
+}
+<h1>Welcome to Admin Page!</h1>
+
+<h2>Users</h2>
+<table id="userTable">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model.Users)
+        {
+            <tr data-id="@user.Id">
+                <td>@user.Username</td>
+                <td>
+                    <p> <a class="delete-btn" data-id="@user.Id" data-action="DeleteUser">Delete</a></p>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h2>Tweets</h2>
+<table id="tweetTable">
+    <thead>
+        <tr>
+            <th>Content</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var tweet in Model.Tweets)
+        {
+            <tr data-id="@tweet.Id">
+                <td>@tweet.contentInput</td>
+                <td>
+                    <p> <a class="delete-btn" data-id="@tweet.Id" data-action="DeleteTweet">Delete</a></p>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h2>Logs</h2>
+<table id="logTable">
+    <thead>
+        <tr>
+            <th>Message</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var log in Model.Logs)
+        {
+            <tr data-id="@log.Id">
+                <td>@log.logType</td>
+                <td>
+                    <p> <a class="delete-btn" data-id="@log.Id" data-action="DeleteLog">Delete</a></p>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="~/js/admin.js"></script>
+

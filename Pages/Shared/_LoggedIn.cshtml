@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - CizgiWebServer</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true"/>
+
+    <style>
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar-nav {
+            margin-right: 10px;
+        }
+        .navbar-brand {
+            margin-left: 10px;
+        }
+        .search-form {
+            display: flex;
+            align-items: center;
+        }
+        .search-input {
+            margin-right: 10px;
+        }
+        .logout-btn {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="~/Index">Home Page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="~/Profile">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="~/Post">Tweet</a>
+                </li>
+            </ul>
+            
+          
+            <form class="form-inline my-2 my-lg-0 search-form">
+                <input class="form-control mr-sm-2 search-input" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+        <button href="~/Logout" class="btn btn-danger logout-btn" id="LogoutButton">Logout</button>
+    </nav>
+</header>
+
+<div class="container flex-grow-1">
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+</div>
+
+<footer class="border-top footer footer-text-white bg-grey">
+    <div class="container text-center">
+        &copy; 2023 - CizgiWebServer - <a href="tel:05331331904">Contact: 0533 133 1904</a>
+    </div>
+</footer>
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+<script src="~/js/login.js" asp-append-version="true"></script>
+
+</body>
+</html>
